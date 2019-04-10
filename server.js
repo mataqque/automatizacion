@@ -25,8 +25,8 @@ module.exports = {
 		await page.goto('https://m.facebook.com/',{timeout:250000})
 	
 		await page.waitFor('input[id=m_login_email]','input[id=m_login_password]','input[id=u_0_5]');
-		await page.$eval("input[id=m_login_email]",el => el.value="mataqque.100@gmail.com");
-		await page.$eval("input[id=m_login_password]",el => el.value="rodrigo123");
+		await page.$eval("input[id=m_login_email]",el => el.value="correo de facebook");
+		await page.$eval("input[id=m_login_password]",el => el.value="contraseña");
 		await page.click('button[id=u_0_5]');
 		await page.waitForNavigation()
 		await page.mouse.click(442,320);//entrada cambiar esto
