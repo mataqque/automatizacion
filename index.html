@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<div>
+    <div>
+        <h3>flavio</h3>
+    </div>    
+    <div>
+    <h3>mataque</h3>
+    </div>
+
+</div>
+    
+<textarea id="textarea" rows="10" cols="50"></textarea>
+<script>
+var x = [...document.querySelectorAll(".news-text-content:nth-child(-n+2)")].map((s)=>{return s.textContent})
+for(var i=0;i<x.length;i++){
+    console.log(x[i])
+}
+</script>
+    </body>
+</html>
